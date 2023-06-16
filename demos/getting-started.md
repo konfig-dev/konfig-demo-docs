@@ -34,6 +34,36 @@ Add a new file called `getting-started.md` under the `demos/` folder.
 Hello world!
 ```
 
+Finally, add a GitHub workflow under
+`.github/workflows/konfig-revalidate-demos.yaml`. This workflow ensures that
+updates to your demo portal are automatically published.
+
+```yaml
+name: konfig-revalidate-demos
+on:
+  push:
+    branches:
+      - main
+jobs:
+  konfig-revalidate-demos:
+    runs-on: ubuntu-latest
+    env:
+      CLI_VERSION: 1.0.208
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache node_modules
+        id: cache-npm
+        uses: actions/cache@v3
+        with:
+          # npm cache files are stored in "~/.npm" on Linux/macOS
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.CLI_VERSION }}
+      - name: Install Konfig CLI
+        run: npm install -g konfig-cli@$CLI_VERSION
+      - name: Revalidate Demos
+        run: konfig revalidate-demos -o [GITHUB_OWNER] -p [GITHUB_REPO]
+```
+
 ### 2) Install Konfig Bot
 
 Go to [https://github.com/apps/konfig-bot](https://github.com/apps/konfig-bot)
