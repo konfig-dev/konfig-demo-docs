@@ -117,9 +117,6 @@ The `:::form` marks the start of a container block. If the container block
 contains a `python` snippet and a `::button` then clicking the button will run
 the Python code.
 
-1. Search for a code snippet with `python` language syntax highlighting
-2. Run the Python code then a `::button` is clicked
-
 The demo should render a section that looks like:
 
 :::form
