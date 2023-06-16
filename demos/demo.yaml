@@ -5,15 +5,17 @@ demos:
     showCode: true
   - id: make-interactive
     showCode: true
-  - id: session
-    showCode: true
   - id: enum
     showCode: true
   - id: number
     showCode: true
   - id: checkbox
     showCode: true
+  - id: date
+    showCode: true
   - id: password
+    showCode: true
+  - id: session
     showCode: true
   - id: pass-data
     showCode: true

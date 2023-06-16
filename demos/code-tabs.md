@@ -1,4 +1,4 @@
-# How to write code in multiple languages
+# Write code in multiple languages
 
 To do this:
 

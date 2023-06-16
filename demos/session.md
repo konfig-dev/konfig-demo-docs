@@ -1,4 +1,4 @@
-# How to write multi-step interactive demo
+# Write multi-step interactive demo
 
 To do this:
 

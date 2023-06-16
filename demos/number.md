@@ -1,4 +1,4 @@
-# How to create number input
+# Input: Number
 
 To do this:
 

@@ -1,4 +1,4 @@
-# How to create a select input
+# Input: Select
 
 To do this:
 

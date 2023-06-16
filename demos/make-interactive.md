@@ -1,4 +1,4 @@
-# How to make your demo interactive
+# Input: Text
 
 To do this:
 

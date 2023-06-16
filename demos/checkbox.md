@@ -1,4 +1,4 @@
-# How to create a checkbox input
+# Input: Checkbox
 
 To do this:
 

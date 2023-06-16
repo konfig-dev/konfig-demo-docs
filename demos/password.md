@@ -1,4 +1,4 @@
-# How to hide input
+# Input: Password
 
 To do this:
 
