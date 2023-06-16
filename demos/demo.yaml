@@ -3,4 +3,20 @@ portalName: Konfig Documentation
 demos:
   - id: getting-started
     showCode: true
+  - id: make-interactive
+    showCode: true
+  - id: session
+    showCode: true
+  - id: enum
+    showCode: true
+  - id: number
+    showCode: true
+  - id: checkbox
+    showCode: true
+  - id: password
+    showCode: true
+  - id: pass-data
+    showCode: true
+  - id: code-tabs
+    showCode: true
 

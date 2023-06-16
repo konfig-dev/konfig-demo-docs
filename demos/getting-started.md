@@ -1,4 +1,4 @@
-# Create your First Demo
+# Create your first demo
 
 In this tutorial we will create a demo portal from scratch and add a piece of interactivity.
 
@@ -99,6 +99,8 @@ print("Hello {}!".format(NAME))
 ```
 
 ::button[Run Code]
+
+Click the button above ⬆️ to run the code.
 
 :::
 
