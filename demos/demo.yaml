@@ -1,4 +1,6 @@
 organizationName: Konfig
-portalName: Konfig Demo Documentation
+portalName: Konfig Documentation
 demos:
   - id: getting-started
+    showCode: true
+
