@@ -26,7 +26,9 @@ demos:
   - id: getting-started
 ```
 
-Add a new file called `getting-started.md` under the `demos/` folder.
+Add a new file called `getting-started.md` under the `demos/` folder. Demos in
+Konfig are simply Markdown files with extra syntax for making the demo
+interactive with Python.
 
 ```markdown
 # Getting Started
@@ -118,7 +120,7 @@ the Python code.
 1. Search for a code snippet with `python` language syntax highlighting
 2. Run the Python code then a `::button` is clicked
 
-The demo should not include a snippet that looks like:
+The demo should render a section that looks like:
 
 :::form
 
