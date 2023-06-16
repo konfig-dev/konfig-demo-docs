@@ -2,7 +2,7 @@
 
 To do this:
 
-# 1) Assign First and Last Name
+### 1) Assign First and Last Name
 
 :::form
 
@@ -19,7 +19,7 @@ print("Assigned first and last name")
 
 :::
 
-# 2) Print Full Name
+### 2) Print Full Name
 
 :::form
 
@@ -34,6 +34,8 @@ print("{} {}".format(first_name, last_name))
 Write this:
 
 ````markdown
+### 1) Assign First and Last Name
+
 :::form
 
 ::input{name=FIRST_NAME label="First Name" description="Assign 'first_name' to a string"}
@@ -49,7 +51,7 @@ print("Assigned first and last name")
 
 :::
 
-# 2) Print Full Name
+### 2) Print Full Name
 
 :::form
 
