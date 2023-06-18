@@ -1,4 +1,4 @@
-# Connect outputs to inputs
+# How to connect outputs to inputs
 
 To do this:
 
