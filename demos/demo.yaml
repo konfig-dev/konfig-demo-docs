@@ -24,6 +24,8 @@ demos:
     showCode: true
   - id: pass-data
     showCode: true
+  - id: environment-variables
+    showCode: true
   - id: code-tabs
     showCode: true
 
