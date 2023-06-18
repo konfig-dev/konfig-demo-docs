@@ -14,7 +14,7 @@ print("Hello, world!")
 ::button[Show Raw Output]
 :::
 
-### JSON
+### JSON Object
 
 :::form{skippable}
 
@@ -31,19 +31,19 @@ print(json_formatted_str)
 ::button[Show JSON Output]
 :::
 
-### Table
+### JSON Array
 
-:::form
+:::form{skippable}
 
 ```python
 import json
 
-json_object = [{"index": 1, "message": "hello"}, {"index": 1, "message": "world!"}]
+json_object = [{"hello": "world!"}] * 500
 
 json_formatted_str = json.dumps(json_object, indent=2)
 
 print(json_formatted_str)
 ```
 
-::button[Show Table Output]
+::button[Show JSON Output]
 :::
