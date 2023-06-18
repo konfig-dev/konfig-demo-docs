@@ -4,6 +4,7 @@ socials:
   website: https://apidemo.konfigthis.com
   documentation: https://demo.konfigthis.com/konfig-dev/konfig-demo-docs
 demos:
+  - id: demo
   - id: getting-started
     showCode: true
   - id: make-interactive
