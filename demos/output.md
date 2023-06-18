@@ -14,7 +14,7 @@ print("Hello, world!")
 ::button[Show Raw Output]
 :::
 
-### JSON Object
+### JSON
 
 :::form{skippable}
 
@@ -31,19 +31,40 @@ print(json_formatted_str)
 ::button[Show JSON Output]
 :::
 
-### JSON Array
+### Table [JSON Array]
 
 :::form{skippable}
 
 ```python
 import json
+import random
 
-json_object = [{"hello": "world!"}] * 500
+first_names = [
+    "John", "David", "Michael", "James", "Robert", "William", "Joseph",
+    "Daniel", "Thomas", "Charles", "Christopher", "Matthew", "Andrew",
+    "Steven", "Edward", "Brian", "Kevin", "Mark", "Anthony", "Donald"
+]
 
-json_formatted_str = json.dumps(json_object, indent=2)
+last_names = [
+    "Smith", "Johnson", "Brown", "Taylor", "Miller", "Anderson", "Clark",
+    "Walker", "Hall", "Allen", "Young", "King", "Scott", "Lee", "Baker",
+    "Green", "Hill", "Adams", "Nelson", "Carter"
+]
 
+def generate_random_name():
+    first_name = random.choice(first_names)
+    last_name = random.choice(last_names)
+    return {"First Name": first_name, "Last Name": last_name}
+
+array = []
+
+# Generate and print 200 random names
+for _ in range(200):
+    array.append(generate_random_name())
+
+json_formatted_str = json.dumps(array, indent=2)
 print(json_formatted_str)
 ```
 
-::button[Show JSON Output]
+::button[Show Table Output]
 :::
