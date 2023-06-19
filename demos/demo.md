@@ -1,6 +1,6 @@
 # Demo: User API
 
-This runs through a sequence of read and write operations on a User API.
+This demo runs through a sequence of read and write operations on a fake User API.
 
 ### 1) List users
 
