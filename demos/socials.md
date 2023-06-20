@@ -1,6 +1,6 @@
 # How to add socials to your demo portal
 
-Simple add an object named `socials` to your `demo.yaml`.
+To add your socials to the demo portal, simply add an object named `socials` to your `demo.yaml`.
 
 We currently support the following keys:
 
