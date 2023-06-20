@@ -27,6 +27,8 @@ demos:
     showCode: true
   - id: environment-variables
     showCode: true
+  - id: socials
+    showCode: false
   - id: code-tabs
     showCode: true
 
