@@ -5,7 +5,7 @@ Simple add an object named `socials` to your `demo.yaml`.
 We currently support the following keys:
 
 - `website`
-- `documentaiton`
+- `documentation`
 
 Here is an example of a `demo.yaml` file with `socials` configured.
 
