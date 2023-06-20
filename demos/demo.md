@@ -2,7 +2,9 @@
 
 This demo runs through a sequence of read and write operations on a fake User API.
 
-### 1) List users
+## Read
+
+### List users
 
 :::form
 
@@ -31,6 +33,9 @@ products = [
 
 # Read operation: Get all users
 def get_all_users():
+    # Save all users for usage in next cell
+    for user in users:
+        print("::SAVE[USERS]/{}".format(user["id"]))
     return users
 
 # Read operation: Get user by ID
@@ -70,65 +75,9 @@ print(json.dumps(get_all_users(), indent=2))
 
 :::
 
-### 2) Create user
+### Get user by ID
 
-:::form
-
-::input{name=NAME label=Name}
-::input{name=EMAIL label=Email}
-
-```python
-
-# Add a new user
-new_user = {"name": NAME, "email": EMAIL}
-created_user = add_user(new_user)
-created_user_id = created_user["id"]
-print(json.dumps(get_all_users(), indent=2))
-```
-
-::button[Create user]
-
-:::
-
-### 3) Update user
-
-:::form
-
-::input{name=NAME label=Name}
-::input{name=EMAIL label=Email}
-
-```python
-# Update user details
-update_user(created_user_id, {"name": NAME, "email": EMAIL})
-
-print(json.dumps(get_all_users(), indent=2))
-```
-
-::button[Update user]
-
-:::
-
-### 4) Delete user
-
-:::form
-
-```python
-# Delete a user
-delete_user(created_user_id)
-print(json.dumps(get_all_users(), indent=2))
-
-# Save all users for usage in next cell
-for user in get_all_users():
-    print("::SAVE[USERS]/{}".format(user["id"]))
-```
-
-::button[Delete user]
-
-:::
-
-### 5) Get user by ID
-
-:::form
+:::form{skippable}
 
 ::enum{name=USER_ID label="User ID" savedData=USERS}
 
@@ -139,5 +88,61 @@ print(json.dumps(user, indent=2))
 ```
 
 ::button[Get user by ID]
+
+:::
+
+## Write
+
+### Create user
+
+:::form{skippable}
+
+::input{name=NAME label=Name}
+::input{name=EMAIL label=Email}
+
+```python
+
+# Add a new user
+new_user = {"name": NAME, "email": EMAIL}
+created_user = add_user(new_user)
+print(json.dumps(get_all_users(), indent=2))
+```
+
+::button[Create user]
+
+:::
+
+### Update user
+
+:::form{skippable}
+
+::enum{name=USER_ID label="User ID" savedData=USERS}
+::input{name=NAME label=Name}
+::input{name=EMAIL label=Email}
+
+```python
+# Update user details
+update_user(USER_ID, {"name": NAME, "email": EMAIL})
+
+print(json.dumps(get_all_users(), indent=2))
+```
+
+::button[Update user]
+
+:::
+
+### Delete user
+
+:::form{skippable}
+
+::enum{name=USER_ID label="User ID" savedData=USERS}
+
+```python
+# Delete a user
+delete_user(USER_ID)
+print(json.dumps(get_all_users(), indent=2))
+```
+
+::button[Delete user]
 
 :::

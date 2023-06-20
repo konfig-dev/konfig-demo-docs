@@ -2,6 +2,8 @@
 
 In this tutorial we will create a demo portal from scratch and add a piece of interactivity.
 
+## Setup the demo
+
 ### 1) Create a GitHub repository
 
 Demo portals are hosted in a GitHub repository. The repository must contains a
@@ -133,6 +135,6 @@ Click the button above ⬆️ to run the code.
 
 :::
 
-### Conclusion
+## Conclusion
 
 Congratulations, you have now made your first interactive demo!
